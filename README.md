@@ -49,16 +49,18 @@ On Azure create RG, VPN, DC1(window server), and Client1(windows 10), go to DC1 
 Copy DC1 public Ipaddress, paste it to remote desktop to connect, on start (type) wf.msc (firewall menu) inbound rules, click on protocol located top bar on the right,
 look for the first 3 ICMP rules (right click) to enable copy Client1 public ip address connect remote desktop command prompt ping (Client1 private ip) it should communicate
 DC1 desktiop go to server manager, add roles and features, (click on) Active directory Domain Services, install, (server mode dashboard) go to (triangle emblem),
-Promote this server as main controller, (display config menu) add new forest, root name; mydomain.com, password; Password1, install (it may restart automatically ) 
+Promote this server as main controller, (display config menu) add new forest, (example) root name; mydomain.com, password; Password1, install (it may restart automatically) 
 log back in using mydomain.com\username 
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+Server manager dashboard go to tools, active directory users and computers, (right click) mydomain.com, new, organizational unit, create _EMPLOYEE and _ADMIN files.
+Inside _ADMIN file (right click) new, admin user,(example) name jane, last doe, username janeadm, password Password1 (uncheck box where user changes password)
+(right click) jane doe, properties, (members tab) add, (type) domain (check names) domain admin, apply 
+log out of DC1 then back in using admin mydomain.com\janeadm, 
+On Azure (copy) DC1 private ip go to Client1, networking, NIC-IP, dns server, dns custom (paste) DC1 private ip, (save) Client1 restart
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
