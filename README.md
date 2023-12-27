@@ -45,9 +45,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+On Azure create RG, VPN, DC1(window server), and Client1(windows 10), go to DC1 menu, networking, networking interferface, IPconfig, change dynamic to static (save) 
+Copy DC1 public Ipaddress, paste it to remote desktop to connect, on start (type) wf.msc (firewall menu) inbound rules, click on protocol located top bar on the right,
+look for the first 3 ICMP rules (right click) to enable copy Client1 public ip address connect remote desktop command prompt ping (Client1 private ip) it should communicate
+DC1 desktiop go to server manager, add roles and features, (click on) Active directory Domain Services, install, (server mode dashboard) go to (triangle emblem),
+Promote this server as main controller, (display config menu) add new forest, root name; mydomain.com, password; Password1, install (it may restart automatically ) 
+log back in using mydomain.com\username 
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
