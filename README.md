@@ -49,7 +49,7 @@ On Azure create RG, VPN, DC1(window server), and Client1(windows 10), go to DC1 
 Copy DC1 public Ipaddress, paste it to remote desktop to connect, on start (type) wf.msc (firewall menu) inbound rules, click on protocol located top bar on the right,
 look for the first 3 ICMP rules (right click) to enable copy Client1 public ip address connect remote desktop command prompt ping (Client1 private ip) it should communicate
 DC1 desktiop go to server manager, add roles and features, (click on) Active directory Domain Services, install, (server mode dashboard) go to (triangle emblem),
-Promote this server as main controller, (display config menu) add new forest, (example) root name; mydomain.com, password; Password1, install (it may restart automatically) 
+Promote this server as main controller, (display config menu) add new forest, (example) root name: mydomain.com, password: Password1, install (it may restart automatically) 
 log back in using mydomain.com\username 
 
 <p>
@@ -66,37 +66,9 @@ On Azure (copy) DC1 private ip go to Client1, networking, NIC-IP, dns server, dn
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+Log into Client1 go to start, system, rename this pc (advanced), change, members of domain, it will ask for admin log in mydomain.com\janeadm password Password1
+(computer will restart) log in Client1 adm, start, system, remtote desktop, select users that can remotely access pc, add, (type) domain users, check names, 
+DC1 desktop start, windows administrative tools, (server manager dashboard) active directory users and computers, <mydomain.com, 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
 
-- Step 1. On Azure set up Resource group, VPN, DC1 (windows server), Client1 (windows 10).
-          Chancge DC1 DNS from dynamic to static on azure
-          Enable rules on DC1 to allow Client1 to ping to DC1
-          Install Active Directory on DC1, promote DC1 and set up mydomain.com
-
-- Step 2. Create organizational units (2 folders) on DC1 name them _EMPLOYEES _ADMIN
-          Administrative user account created under _ADMIN folder
-          Log out of DC1 then log back in using admin
-          Change Client1 DNS to DC1 domain's DNS
-  
-- Step 3. Rename Client1 PC to mydomain.com
-          Client1 Set-up all domain users to be able to log-in
-          DC1 create alot of users using script provided and attempt to log-in to Client1
-          Log-in using a creating user profile 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
