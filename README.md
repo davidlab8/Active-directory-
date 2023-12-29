@@ -1,4 +1,4 @@
-<p align="center">
+p<p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
@@ -47,7 +47,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p
           
 - Step 1. On Azure create RG, VPN, DC1 (window server), and Client1 (windows 10)
-  - DC1 menu, networking, networking interferface, IPconfig, change dynamic to static (save)
+    - DC1 menu, networking, networking interferface, IPconfig, change dynamic to static (save)
   - Copy DC1 public Ipaddress, paste it to remote desktop to connect, start (type) wf.msc (firewall menu) inbound rules, click on protocol located top bar on the right,
 look for the first 3 ICMP rules (right click) to enable copy Client1 public ip address connect remote desktop command prompt ping (Client1 private ip) it should communicate
   - DC1 desktiop go to server manager, add roles and features, (click on) Active directory Domain Services, install, (server mode dashboard) go to (triangle emblem),
@@ -68,13 +68,16 @@ log back in using mydomain.com\username .
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Log into Client1 go to start, system, rename this pc (advanced), change, members of domain, it will ask for admin log in mydomain.com\janeadm password Password1
-(computer will restart) log in Client1 adm, start, system, remtote desktop, select users that can remotely access pc, add, (type) domain users, check names, 
-(all domain users should be able to log in) 
-DC1 (admin) start, type Windows Powershell ISE (run as admin) copy script 
+<p
+  
+  - Step 3. Log into Client1 go to start, system, rename this pc (advanced), change, members of domain, it will ask for admin log in mydomain.com\janeadm password Password1
+(computer will restart)
+    - log in Client1 adm, start, system, remtote desktop, select users that can remotely access pc, add, (type) domain users, check names, 
+(all domain users should be able to log in)
+    - DC1 (admin) start, type Windows Powershell ISE (run as admin) copy script 
 (https://docs.google.com/document/d/1MqWdlE974hhtshnOsROZ3Yr8xaLd7YuhYbmXhMCiYLY/edit)https://docs.google.com/document/d/1MqWdlE974hhtshnOsROZ3Yr8xaLd7YuhYbmXhMCiYLY/edit
-(powershell ise menu) new script, paste, run script users files will start downloading.  In _EMPLOYEE file (copy a user id) log out of Client1 and back in using user 
+(powershell ise menu) new script, paste, run script users files will start downloading.
+    - In _EMPLOYEE file (copy a user id) log out of Client1 and back in using user 
 mydomain.com\username 
 
 
