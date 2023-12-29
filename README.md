@@ -3,7 +3,7 @@ p<p align="center">
 </p>
 
 <h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This tutorial is a guide on how to create Active Directory within Azure Virtual Machines.<br />
 
 
 <h2>Video Demonstration</h2>
@@ -22,7 +22,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>Active directory and Configuration Steps</h2>
 
 - Step 1. On Azure set up Resource group, VPN, DC1 (windows server), Client1 (windows 10)
   - Change DC1 DNS from dynamic to static on Azure
@@ -31,7 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Step 2. Create organizational units (2 folders) on DC1 name them _EMPLOYEES and _ADMIN
   - Create administrative user account under _ADMIN folder
-  - Log out of DC1 then log back in using admin
+  - Log out of DC1 then log back in using created admin account 
   - Change Client1 DNS to DC1 domain's DNS.
   
 - Step 3. Rename Client1 PC to mydomain.com
@@ -49,7 +49,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 1. On Azure create RG, VPN, DC1 (window server), and Client1 (windows 10)
     - DC1 menu, networking, networking interferface, IPconfig, change dynamic to static (save)
   - Copy DC1 public Ipaddress, paste it to remote desktop to connect, start (type) wf.msc (firewall menu) inbound rules, click on protocol located top bar on the right,
-look for the first 3 ICMP rules (right click) to enable copy Client1 public ip address connect remote desktop command prompt ping (Client1 private ip) it should communicate
+look for the first 3 ICMP rules (right click) to enable rules, (copy) Client1 public ip address connect remote desktop command prompt ping (Client1 private ip) it should communicate
   - DC1 desktiop go to server manager, add roles and features, (click on) Active directory Domain Services, install, (server mode dashboard) go to (triangle emblem),
 Promote this server as main controller, (display config menu) add new forest, (example) root name: mydomain.com, password: Password1, install (it may restart automatically) 
 log back in using mydomain.com\username .
