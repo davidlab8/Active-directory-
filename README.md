@@ -90,16 +90,22 @@ log back in using mydomain.com\username .
 
   ![278075C8-9D71-49D9-B0AD-650CC816AF48](https://github.com/davidlab8/Active-directory-/assets/154483052/9e7142ac-f7ee-445f-8408-3ef2b6d56599)
 
+![3D99261E-19D4-4958-99D8-2C5C9F8E5CE7](https://github.com/davidlab8/Active-directory-/assets/154483052/fbdcd3ae-b712-4c77-b6d8-751b53f0ff15)
 
-  
-  
-  
+  ![933EB3B6-97C5-4E65-961B-BE5DF3F15F2F](https://github.com/davidlab8/Active-directory-/assets/154483052/cc8ed751-a071-4184-b4e1-07928d801838)
+
+  ![B1CF8C69-8C38-4736-AA26-D4A4DF4998E2](https://github.com/davidlab8/Active-directory-/assets/154483052/36c1b5ee-d78c-442f-b50f-ae7a6a05aab9)
+
+  ![99D70C56-A02B-4B4F-B418-50E5E5815B43](https://github.com/davidlab8/Active-directory-/assets/154483052/cce0f26a-283d-4224-8bf7-2d346eef7c22)
+
+![A43D8BB4-9813-4B88-B509-4EB8BF7BB245](https://github.com/davidlab8/Active-directory-/assets/154483052/0993b079-f256-4287-9e1f-a0437e765536)
+
   - Step 3. Log into Client1 (right-click) start, system, rename this pc (advanced), change, members of domain, (type) mydomain.com it will ask for admin log in mydomain.com\janeadm password Password1
 (computer will restart)
     - log in Client1 adm, (mydomain.com\janeadm) start, system, remote desktop, select users that can remotely access pc, add, (type) domain users, check names, 
 (all domain users should be able to log in)
     - DC1 (admin) start, type Windows Powershell ISE (run as admin) copy example script (right-click open in new tab) 
-https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) (powershell ise menu) new script, paste, run script (users files will start downloading)
+https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) next to raw tab, (click) on copy raw file (powershell ise menu) new script, paste, run script (users files will start downloading)
     - Start, windows administrative tools, active directory users and computers, mydomain,com (file), In _EMPLOYEE file (copy a user id) log out of Client1 and back in using copied username mydomain.com\username 
 
 
