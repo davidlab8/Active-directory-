@@ -8,8 +8,7 @@ This tutorial is a guide on how to create Active Directory within Azure Virtual 
 
 <h2>Video Demonstration</h2>
 
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
-
+- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute][](https://www.youtube.com/watch?v=mH48U0PlLKI)
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
