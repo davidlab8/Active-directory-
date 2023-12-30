@@ -58,9 +58,6 @@ This tutorial is a guide on how to create Active Directory within Azure Virtual 
 
 ![6158E548-4752-4397-8374-7403A15B0A80](https://github.com/davidlab8/Active-directory-/assets/154483052/5136d321-4b98-4c07-9c2b-83162e7ca26d)
 
-
-
-
 - Step 1. On Azure create RG, VPN, DC1 (window server), and Client1 (windows 10)
     - DC1 menu, networking, networking interferface, IPconfig, change dynamic to static (save)
   - Copy DC1 public Ipaddress, paste it to remote desktop to connect, start (type) wf.msc (firewall menu) inbound rules, click on protocol located top bar on the right,
@@ -69,11 +66,22 @@ look for the first 3 ICMP rules (right click) to enable rules, (copy) Client1 pu
 Promote this server as main controller, (display config menu) add new forest, (example) root name: mydomain.com, password: Password1, install (it may restart automatically) 
 log back in using mydomain.com\username .
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p
+![0BDCF1DF-14E1-4FE1-8047-12060A6DA772](https://github.com/davidlab8/Active-directory-/assets/154483052/81cd1ce5-a7da-442d-af13-484432230ec5)
+
+![FA45F6DD-7125-4BEB-9B61-439F8797D0AF](https://github.com/davidlab8/Active-directory-/assets/154483052/c036bebf-c1a4-48ad-a786-5753ecf45728)
   
+  ![2D29FD48-C70A-416A-A150-4655441C72EF](https://github.com/davidlab8/Active-directory-/assets/154483052/5cb5a074-74e9-4f64-bb66-ec6e8fe52725)
+
+![B3AC7DD8-D6BD-42E0-B9A9-BF6AB26B5A26](https://github.com/davidlab8/Active-directory-/assets/154483052/1ac4fb86-08fd-41a7-8292-1fe6a32bd6e8)
+
+![05A67A85-3940-4DFE-8721-BA66F3E1FF86](https://github.com/davidlab8/Active-directory-/assets/154483052/0c36617b-cf74-46b4-ab0d-614e9f90ca87)
+
+
+
+
+
+
+
   - Step 2. Server manager dashboard go to tools, active directory users and computers, (right click) mydomain.com, new, organizational unit, create _EMPLOYEE and _ADMIN files
     - Inside _ADMIN file (right click) new, admin user name,(example) jane, last name doe, username janeadm, password Password1 (uncheck box where user changes password)
 (right click) jane doe, properties, (members tab) add, (type) domain (check names) domain admin, apply
