@@ -1,4 +1,4 @@
-p<p align="center">
+<p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
@@ -98,9 +98,8 @@ log back in using mydomain.com\username .
 (computer will restart)
     - log in Client1 adm, start, system, remtote desktop, select users that can remotely access pc, add, (type) domain users, check names, 
 (all domain users should be able to log in)
-    - DC1 (admin) start, type Windows Powershell ISE (run as admin) copy script 
-(https://docs.google.com/document/d/1MqWdlE974hhtshnOsROZ3Yr8xaLd7YuhYbmXhMCiYLY/edit)https://docs.google.com/document/d/1MqWdlE974hhtshnOsROZ3Yr8xaLd7YuhYbmXhMCiYLY/edit
-(powershell ise menu) new script, paste, run script users files will start downloading.
+    - DC1 (admin) start, type Windows Powershell ISE (run as admin) copy example script (right-click open in new tab) 
+https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) (powershell ise menu) new script, paste, run script users files will start downloading.
     - In _EMPLOYEE file (copy a user id) log out of Client1 and back in using user 
 mydomain.com\username 
 
