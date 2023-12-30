@@ -86,12 +86,15 @@ log back in using mydomain.com\username .
     - log out of DC1 then back in using admin mydomain.com\janeadm
     - Azure (copy) DC1 private ip go to Client1, networking, NIC-IP, dns server, dns custom (paste) DC1 private ip, (save) Client1 restart.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p
+![77333E99-C70C-44BB-9987-53851CCE8295](https://github.com/davidlab8/Active-directory-/assets/154483052/1ecbbef5-6138-4d42-8c9c-7de3b7e10a5b)
+
+  ![278075C8-9D71-49D9-B0AD-650CC816AF48](https://github.com/davidlab8/Active-directory-/assets/154483052/9e7142ac-f7ee-445f-8408-3ef2b6d56599)
+
+
   
-  - Step 3. Log into Client1 go to start, system, rename this pc (advanced), change, members of domain, it will ask for admin log in mydomain.com\janeadm password Password1
+  
+  
+  - Step 3. Log into Client1 (right-click) start, system, rename this pc (advanced), change, members of domain, (type) mydomain.com it will ask for admin log in mydomain.com\janeadm password Password1
 (computer will restart)
     - log in Client1 adm, start, system, remtote desktop, select users that can remotely access pc, add, (type) domain users, check names, 
 (all domain users should be able to log in)
