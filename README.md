@@ -76,14 +76,12 @@ log back in using mydomain.com\username .
 
 ![05A67A85-3940-4DFE-8721-BA66F3E1FF86](https://github.com/davidlab8/Active-directory-/assets/154483052/0c36617b-cf74-46b4-ab0d-614e9f90ca87)
 
+![DC819A8F-B772-49E3-BD98-80D35D9EB01E](https://github.com/davidlab8/Active-directory-/assets/154483052/3da5363c-d24b-4a55-89d5-b58d537ae238)
 
-
-
-
-
+![01A144A9-BC03-4E07-B5AF-C9F68B36812A](https://github.com/davidlab8/Active-directory-/assets/154483052/821f481d-417a-42cc-822c-684a723a5e6b)
 
   - Step 2. Server manager dashboard go to tools, active directory users and computers, (right click) mydomain.com, new, organizational unit, create _EMPLOYEE and _ADMIN files
-    - Inside _ADMIN file (right click) new, admin user name,(example) jane, last name doe, username janeadm, password Password1 (uncheck box where user changes password)
+    - Inside _ADMIN file (right click) new, user, admin, name,(example) jane, last name doe, username janeadm, password Password1 (uncheck box where user changes password)
 (right click) jane doe, properties, (members tab) add, (type) domain (check names) domain admin, apply
     - log out of DC1 then back in using admin mydomain.com\janeadm
     - Azure (copy) DC1 private ip go to Client1, networking, NIC-IP, dns server, dns custom (paste) DC1 private ip, (save) Client1 restart.
