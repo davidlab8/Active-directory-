@@ -100,6 +100,9 @@ log back in using mydomain.com\username .
 
 ![A43D8BB4-9813-4B88-B509-4EB8BF7BB245](https://github.com/davidlab8/Active-directory-/assets/154483052/0993b079-f256-4287-9e1f-a0437e765536)
 
+![IMG_1028](https://github.com/davidlab8/Active-directory-/assets/154483052/0173209f-5c08-4d38-aba7-6563c02ba59c)
+
+
   - Step 3. Log into Client1 (right-click) start, system, rename this pc (advanced), change, members of domain, (type) mydomain.com it will ask for admin log in mydomain.com\janeadm password Password1
 (computer will restart)
     - log in Client1 adm, (mydomain.com\janeadm) start, system, remote desktop, select users that can remotely access pc, add, (type) domain users, check names, 
