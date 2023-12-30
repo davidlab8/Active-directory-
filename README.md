@@ -96,12 +96,11 @@ log back in using mydomain.com\username .
   
   - Step 3. Log into Client1 (right-click) start, system, rename this pc (advanced), change, members of domain, (type) mydomain.com it will ask for admin log in mydomain.com\janeadm password Password1
 (computer will restart)
-    - log in Client1 adm, start, system, remtote desktop, select users that can remotely access pc, add, (type) domain users, check names, 
+    - log in Client1 adm, (mydomain.com\janeadm) start, system, remote desktop, select users that can remotely access pc, add, (type) domain users, check names, 
 (all domain users should be able to log in)
     - DC1 (admin) start, type Windows Powershell ISE (run as admin) copy example script (right-click open in new tab) 
-https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) (powershell ise menu) new script, paste, run script users files will start downloading.
-    - In _EMPLOYEE file (copy a user id) log out of Client1 and back in using user 
-mydomain.com\username 
+https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) (powershell ise menu) new script, paste, run script (users files will start downloading)
+    - Start, windows administrative tools, active directory users and computers, mydomain,com (file), In _EMPLOYEE file (copy a user id) log out of Client1 and back in using copied username mydomain.com\username 
 
 
 
