@@ -41,11 +41,19 @@ This tutorial is a guide on how to create Active Directory within Azure Virtual 
 
 <h2>Deployment and Configuration Steps</h2>  
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p
-          
+![C21D7F2E-992E-4CAA-9E36-E2C7B1A56CC4](https://github.com/davidlab8/Active-directory-/assets/154483052/8a536f4b-d844-495e-aa2d-7b30dd70b520)
+
+ ![6959EA7C-A466-400B-948C-4B0B5E266F55](https://github.com/davidlab8/Active-directory-/assets/154483052/5db12451-d7c8-4f7b-844b-101e104bbb39)
+
+![5696E6CF-4D0A-4656-B8D7-06D0FB7796B4](https://github.com/davidlab8/Active-directory-/assets/154483052/a453f589-faab-46e3-bd05-673857b6312b)
+
+![527D43EB-BB76-45A3-974B-921E99A41DB1](https://github.com/davidlab8/Active-directory-/assets/154483052/23116f9b-2077-4cac-a34b-897e0fda5375)
+
+
+![E246D448-3B20-4F43-ACA9-A83C910FDC9D](https://github.com/davidlab8/Active-directory-/assets/154483052/0d7915b2-bc8a-4b55-badb-3334fc1ce47c)
+
+
+
 - Step 1. On Azure create RG, VPN, DC1 (window server), and Client1 (windows 10)
     - DC1 menu, networking, networking interferface, IPconfig, change dynamic to static (save)
   - Copy DC1 public Ipaddress, paste it to remote desktop to connect, start (type) wf.msc (firewall menu) inbound rules, click on protocol located top bar on the right,
