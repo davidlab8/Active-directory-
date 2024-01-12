@@ -41,7 +41,7 @@ This tutorial is a guide on how to create Active Directory within Azure Virtual 
 
 <h2>Deployment and Configuration Steps</h2>  
 
-Step 1.
+STEP 1.
 
 ![C21D7F2E-992E-4CAA-9E36-E2C7B1A56CC4](https://github.com/davidlab8/Active-directory-/assets/154483052/8a536f4b-d844-495e-aa2d-7b30dd70b520)
 - Step 1. On Azure create RG, VPN, DC1 (window server), and Client1 (windows 10)
